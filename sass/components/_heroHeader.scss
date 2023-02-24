@@ -1,0 +1,129 @@
+.hero {
+    background-color: var(--primary-color);
+
+        &__nav {
+            position: relative;
+            
+            height: 502px;
+
+            perspective: 400px;
+        }
+
+        &__menu {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__iconMenu {
+            fill: var(--white-color);
+        }
+
+        &__title {
+            margin-top: 99px;
+            width: 247px;
+            height: 97px;
+        }
+
+        &__productsLink {
+            display: flex;
+            margin-top: 32px;
+            align-items: center;
+        }
+
+        &__productsBtn {
+            @extend %button;
+            width: 108px;
+            height: 38px;
+
+            margin-left: 0;
+            margin-right: 0;
+
+            font-size: 12px;
+            line-height: 15px;
+
+            background-color: transparent;
+            border: 2px solid var(--yellow-color);
+            border-radius: 8px;
+
+                &:hover {
+                    border-color: var(--hover-color);
+                }
+        }
+
+        &__productLink {
+            color: var(--black-color);
+        }
+
+        &__howItIsMadeBtn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+            height: 24px;
+            padding: 0;
+            margin-left: 12px;
+
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 15px;
+            text-decoration-line: underline;
+            background-color: transparent;
+            border: none;
+
+                &:hover .hero__howLink {
+                    color: var(--hover-color);
+                }
+
+                &:focus .hero__howLink {
+                    color: var(--white-color);
+                }
+
+                &:disabled .hero__howLink {
+                    color: var(--grey-color);
+                }
+        }
+
+        &__howLink {
+            color: var(--yellow-color);
+        }
+
+        &__dots {
+            position:absolute;
+            bottom:0;
+            right:0;
+
+            width: 320px;
+            height: 50px;
+
+            background-image: url(/images/header/dots.svg);
+
+        }
+
+        &__iceCreamImg {
+            position: absolute;
+            bottom:0;
+            right: 15%;
+
+            width: 177px;
+            height: 217px;
+
+            background-image: url(/images/header/iceCream.svg);
+
+            animation: animate125 1000ms;
+
+        }
+
+        @keyframes animate125 {
+            0% {
+              transform: scale(1);
+            }
+          
+            50% {
+              transform: scale(1.25);
+            }
+          
+            100% {
+              transform: scale(1);
+            }
+          }
+}

@@ -1,0 +1,45 @@
+%button {
+    height: 42px;
+
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+
+    color: var(--black-color);
+    background-color: var(--yellow-color);
+    border-radius: 10px;
+    border: none;
+}
+
+%formField {
+    line-height: 17px;
+
+    background: rgba(248, 210, 78, 0.1);
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+
+        &::placeholder {
+            color: var(--secondary-black-color);
+            font-size: 12px;
+            line-height: 140%;
+        } 
+}
+
+%formComments {
+    resize: none;
+
+    background: rgba(248, 210, 78, 0.1);
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+
+        &::placeholder {
+            color: var(--secondary-black-color);
+        } 
+}

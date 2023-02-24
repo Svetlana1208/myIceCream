@@ -1,0 +1,141 @@
+.about {
+    position: relative;
+
+    padding-top: 61px;
+
+    text-align: center;
+
+    background-color: var(--primary-color);
+
+        &__title {
+            width: 210px;
+            display: flex;
+            flex-direction: column;
+
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        &__label {
+            margin-bottom: 12px;
+
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 22px;
+            text-transform: uppercase;
+
+            color: var(--white-color);
+        }
+
+        &__name {
+            color: var(--white-color);
+        }
+
+        &__img {
+            position: absolute;
+            top: 41%;
+            left: 50%;
+            
+            transform:translate(-50%, -50%);
+        }
+
+        &__description {
+            width: 220px;
+
+            margin-top: 372px;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+
+        &__text {
+            line-height: 162%;
+            color: var(--white-color);
+
+            &:nth-child(1) {
+            
+                line-height: 176%;
+                letter-spacing: 0.04em;
+            }
+            
+            &:not(:last-child) {
+                margin-bottom: 4px;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+}
+
+.readMoreBtn {
+    @extend %button;
+   
+    width: 164px;
+
+    margin-top: 24px;
+
+        &:hover {
+            background-color: var(--hover-color);
+        }
+
+        &:focus {
+            background-color: var(--hover-color);
+            color: var(--white-color);
+
+                & .arrowBtn {
+                    fill: var(--white-color);
+                }
+        }
+
+        &:disabled {
+            background-color: var(--grey-color);
+        }
+}
+
+.readMoreModal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 280px;
+    height: 459px;
+    padding: 28px;
+
+    background: var(--white-color);
+    border: 2px solid var(--yellow-color);
+    border-radius: 10px;
+
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.articleAbout {
+
+        &__title {
+            margin-bottom: 20px;
+
+            font-family: 'Seymour One';
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        &__video {
+            width: 224px;
+            height: 199px;
+
+            margin-bottom: 20px;
+            
+            background-image: url(/images/about/clarity_play-solid.png), url(/images/about/Rectangle.png);
+            background-position: center, top right;
+            background-repeat: no-repeat;
+        }
+
+        &__description {
+            text-align: left;
+            font-size: 14px;
+            line-height: 140%;
+        }
+}

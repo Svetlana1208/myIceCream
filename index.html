@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Seymour+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <title>MyIceCream</title>
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+<body>
+    <div class="overflow">
+        <header>
+            <section class="hero">
+                <nav class="hero__nav container">
+                    <div class="hero__menu">
+                        <img class="logo" src="./images/header/logo.png" width="40px" height="37px" alt="Logo">
+                
+                        <button type="button" class="toggle js-open-menu" aria-expanded="false" aria-controls="mobileMenu">
+                            <svg width="32px" height="32px">
+                                <use class="hero__iconMenu" href="/images/sprite.svg#icon-mobileMenu"></use>
+                            </svg>
+                        </button>
+                        
+                        <div class="menu js-menu-container" id="mobileMenu">
+                            <div class="hero__menu">
+                                <img class="logo" src="./images/header/logo.png" width="40px" height="37px" alt="Logo">
+                    
+                                <button class="toggle js-close-menu">
+                                    <svg width="32px" height="32px">
+                                        <use class="hero__iconMenu" href="/images/sprite.svg#icon-mobileMenuClose"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                    
+                            <div class="mobileMenu">
+                                <ul class="mobileMenu__list">
+                                    <li class="mobileMenu__item"><a class="mobileMenu__link" href="./index.html">Home</a></li>
+                                    <li class="mobileMenu__item"><a class="mobileMenu__link" href="./index.html#about">How it’s made?</a></li>
+                                    <li class="mobileMenu__item"><a class="mobileMenu__link" href="./index.html#products">Our products</a></li>
+                                    <li class="mobileMenu__item"><a class="mobileMenu__link" href="./index.html#contacts">Contact</a></li>
+                                </ul>
+                    
+                                <button data-modal-open class="mobileMenu__btn" type="button">Buy now
+                                    <svg class="arrowBtn">
+                                        <use href="/images/sprite.svg#icon-arrowBtn"></use>
+                                    </svg>
+                
+                                </button>
+                                
+                                <div class="backdrop is-hidden" data-modal>
+                                    <div class="order">
+                                        <button class="crossBtn" data-modal-close>
+                                            <svg width="20px" height="20px">
+                                                <use href="/images/sprite.svg#icon-clarity_close-line"></use>
+                                            </svg>
+                                        </button>
+                                        
+                                        <form class="form">
+                                            <h3 class="form__title">Buy now</h3>
+                                            
+                                            <ul class="form__product">
+                                                <li class="form__item iceCream">
+                                                    <p class="form__productName">ice cream</p>
+                                                </li>
+                                                <li class="form__item iceCoffee">
+                                                    <p class="form__productName">ice coffee</p>
+                                                </li>
+                                                <li class="form__item milkshakes">
+                                                    <p class="form__productName">milkshake</p>
+                                                </li>
+                                            </ul>
+
+                                                <input class="form__field" type="text" name="name" placeholder="Name" />
+                                                <input class="form__field" type="tel" name="tel" placeholder="Phone" />
+                                                <textarea class="form__comments" name="comments" rows="4" placeholder="Comment"></textarea>
+                                                <button class="form__submit" type="submit">Submit</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                
+                    </div>
+                    
+                    <h1 class="hero__title">ice cream made with passion</h1>
+
+                    <div class="hero__productsLink">
+                        <button class="hero__productsBtn" type="button"><a class="hero__productLink" href="./index.html#products">Products</a></button>
+                        <button class="hero__howItIsMadeBtn" type="button"><a class="hero__howLink" href="./index.html#about">How it’s made?</a></button>
+                    </div>
+
+                    <div class="hero__dots"></div>
+                    <div class="hero__iceCreamImg"></div>
+                </nav>
+            </section>
+        </header>
+
+        <main>
+            <section id="products" class="productSection">
+                <div class="productSection__title">
+                    <label class="productSection__label" for="products">100% natural</label> 
+                    <h2>products</h2>
+                </div>
+
+                <ul class="grid">
+                    <li class="grid__item iceCream">
+                        <article class="product">
+                            <h3 class="product__name">ice cream</h3>
+                            <p class="product__description">Soft ice cream with a delicate taste. Made with milk, cream, sugar and natural stabilizer</p>
+                            <button class="arrowIceCream" data-productModal-open type="button"></button>
+                                
+                            <div class="backdrop is-hidden" data-productModal>
+                                <div class="productCard">
+                                    <button class="crossBtn" data-productModal-close>
+                                        <svg width="20px" height="20px">
+                                            <use href="/images/sprite.svg#icon-clarity_close-line"></use>
+                                        </svg>
+                                    </button>
+
+                                    <h3 class="productCard__title">Chololate icecream</h3>
+
+                                    <img class="productCard__img" src="./images/products/iceCream.png" alt="iceCream" width="150px" height="139px">
+
+                                    <div class="productCard__calories">
+                                        <img src="./images/products/kcal.png" alt="kcal" width="53px" height="72px">
+                                        <img src="./images/products/prote.png" alt="prote" width="53px" height="72px">
+                                        <img src="./images/products/fats.png" alt="fats" width="53px" height="72px">
+                                        <img src="./images/products/carbs.png" alt="carbs" width="53px" height="72px">
+                                    </div>
+
+                                    <h4 class="ingredients">Ingredients</h4>
+                                    <ul class="ingredients__list">
+                                        <li class="ingredients__li">
+                                            <div class="ingredients__item">
+                                            <p>Milk</p>
+                                            <p>100ml</p>
+                                            </div>
+                                        </li>
+                                        <li class="ingredients__li">
+                                            <div class="ingredients__item">
+                                                <p>Belgian chocolate</p>
+                                                <p>20g</p>
+                                            </div>
+                                        </li>
+                                        <li class="ingredients__li">
+                                            <div class="ingredients__item">
+                                                <p>Cream</p>
+                                                <p>150 ml</p>
+                                            </div>
+                                        </li>
+                                        <li class="ingredients__li">
+                                            <div class="ingredients__item">
+                                                <p>Cocoa powder</p>
+                                                <p>30g</p>
+                                            </div>
+                                        </li>
+                                        <li class="ingredients__li">
+                                            <div class="ingredients__item">
+                                                <p>Sugar</p>
+                                                <p>40g</p>
+                                            </div>
+                                        </li>
+                                        <li class="ingredients__li">
+                                            <div class="ingredients__item">
+                                                <p>Vanilla sugar</p>
+                                                <p>10g</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                    <form class="commentsForm">
+                                        <input class="commentsForm__field" type="text" name="name" placeholder="Name" />
+                                        <input class="commentsForm__field" type="tel" name="tel" placeholder="Phone" />
+                                        <textarea class="commentsForm__comments" name="comments" rows="4" placeholder="Comment"></textarea>
+                                        <button class="commentsForm__submit" type="submit">Submit</button>
+
+                                    </form>
+                                </div>
+                            </div>
+                        </article>
+                    </li>
+                    
+                    <li class="grid__item iceCoffee">
+                        <article class="product">
+                            <h3 class="product__name">ice coffee</h3>
+                            <p class="product__description">Fragrant invigorating drink created from 100% natural ingredients without the use of preservatives and flavor enhancers</p>
+                            <button class="arrowIceCoffee" type="button"></button>
+                        </article>
+                    </li>
+                    
+                    <li class="grid__item milkshakes">
+                        <article class="product">
+                            <h3 class="product__name">milkshakes</h3>
+                            <p class="product__description">Sweet drinks based on milk and ice cream, supplemented with syrups, fruits, berries and other sweets of your choice</p>
+                            <button class="arrowMilkShakes" type="button"></button> 
+                        </article>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="about" class="about">
+                <div class="about__title">
+                    <label class="about__label" for="how it’s made?">tradition and love</label>
+                    <h2 class="about__name">how it’s made?</h2>
+                </div>
+
+                <img class="about__img" src="./images/about/cow.png" alt="cow" width="320px" height="300px">
+
+                <div class="about__description">
+                    <p class="about__text">
+                        Ice is a place where you will become not only a little happier, but also healthier. Health is the main value for us, and we follow it when creating our handmade desserts. 
+                    </p>
+                    <p class="about__text">
+                        We use traditional recipes and 100% natural ingredients. Our products are so natural that they can be given to children from the age of three years. Sweets lovers can expect 55 types of ice cream, 15 types of coffee and 23 milkshakes. 
+                    </p>
+                    <p class="about__text">
+                        This is enough to choose ice cream and  coffee for any mood!
+                    </p>
+                </div>
+
+                <button data-readMoreModal-open class="readMoreBtn" type="button">Read more
+                    <svg class="arrowBtn">
+                        <use href="/images/sprite.svg#icon-arrowBtn"></use>
+                    </svg>
+                </button>
+
+                <div class="backdrop is-hidden" data-readMoreModal>
+                    <div class="readMoreModal">
+                        <button class="crossBtn" data-readMoreModal-close>
+                            <svg width="20px" height="20px">
+                                <use href="/images/sprite.svg#icon-clarity_close-line"></use>
+                            </svg>
+                        </button>
+
+                        <article class="articleAbout">
+                            <h3 class="articleAbout__title">How it’s made?</h3>
+                            <div class="articleAbout__video"></div>
+                            <p class="articleAbout__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+                        </article>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="advantages">
+                <h2 class="visuallyHidden">Advantages</h2>
+                <ul class="grid">
+                    <li class="grid__advItem imgCow">
+                        <article class="advantage">
+                            <h3 class="advantage__title">721</h3>
+                            <p class="advantage__description">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
+                        </article>
+                    </li>
+
+                    <li class="grid__advItem imgWeight">
+                        <article class="advantage">
+                            <h3 class="advantage__title">16kg</h3>
+                            <p class="advantage__description">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
+                        </article>
+                    </li>
+
+                    <li class="grid__advItem imgIceCream">
+                        <article class="advantage">
+                            <h3 class="advantage__title">84</h3>
+                            <p class="advantage__description">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
+                        </article>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="galleryReviews container">
+                <div class="gallery">
+                    <div class="gallery__item">
+                        <img class="gallery__img" src="./images/reviews/IceCream.png" alt="iceCream" width="280px" height="130px">
+                    </div>
+                    <div class="gallery__item">
+                        <img class="gallery__img" src="./images/reviews/iceCream2.png" alt="iceCream2" width="280px" height="130px">
+                    </div>
+                    <div class="gallery__item">
+                        <img class="gallery__img" src="./images/reviews/iceCream3.png" alt="iceCream3" width="280px" height="130px">
+                    </div>
+                </div>
+
+                <div class="reviews">
+                    <div class="customer">
+                        <img class="customer__foto" src="./images/reviews/customerFoto.png" alt="customer" width="85px" height="85px">
+                        <div class="customer__review">
+                            <p class="customer__textReview">
+                                I love visiting your cafe. <br/>You prepare the most delicious ice cream in Los Angeles! <br/>In addition, you have beautiful serving, cozy atmosphere and polite staff.
+                            </p>
+                        </div>
+                        <p class="customer__name">Emily, Los Angeles</p>
+                        <svg width="72px" height="12px">
+                            <use href="/images/sprite.svg#icon-revdots"></use>
+                        </svg>
+                    </div>
+
+                    <div class="customer">
+                        <img class="customer__foto" src="./images/reviews/customerFoto2.png" alt="customer" width="85px" height="85px">
+                        <div class="customer__review">
+                            <p class="customer__textReview">
+                                Every day we come to you with friends after classes in college. We love your ice cream and casual atmosphere!
+                            </p>
+                        </div>
+                        <p class="customer__name">Bryan, New-York</p>
+                        <svg width="72px" height="12px">
+                            <use href="/images/sprite.svg#icon-revdots2"></use>
+                        </svg>
+                    </div>
+
+                    <div class="customer">
+                        <img class="customer__foto" src="./images/reviews/customerFoto3.png" alt="customer" width="85px" height="85px">
+                        <div class="customer__review">
+                            <p class="customer__textReview">
+                                Ice cream is my passion! I love your chocolate hazelnut ice cream! And I really like the excellent service - always served politely and quickly!
+                            </p>
+                        </div>
+                        <p class="customer__name">Diana, Chicago</p>
+                        <svg width="72px" height="12px">
+                            <use href="/images/sprite.svg#icon-revdots3"></use>
+                        </svg>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <section class="contacts container">
+                <h2 class="visuallyHidden">Contacts</h2>
+                <ul class="grid">
+                    <li id="contacts" class="grid__contacts">
+                        <div class="location">
+                            <div class="location__type">CAFE</div>
+                            
+                            <h4 class="location__city">Chicago</h4>
+                            
+                            <address class="location__address">
+                                10340 Ridgeland Ave, <br/>Chicago Ridge, IL 60415, USA
+                            </address>
+                            
+                            <div class="schedule">
+                                <p class="workingDays">Monday - Friday</p>
+                                <p class="workingHours">06:00 AM - 10:00 PM</p>
+                                <p class="workingDays">Saturday - Sunday</p>
+                                <p class="workingHours">08:00 AM - 16:00 PM</p>
+                            </div>
+
+                            <address class="location__contacts">
+                                <a class="location__phone" href="tel:+61(0) 383 766 284">+61(0) 383 766 284</a>
+                                <a class="location__email" href="mailto:noreply@envato.com">noreply@envato.com</a>
+                            </address>
+                        </div>
+                    </li>
+
+                    <li class="grid__contacts">
+                        <div class="location">
+                            <div class="location__type">FOODTRUCK</div>
+                            
+                            <h4 class="location__city">Los Angeles</h4>
+                            
+                            <address class="location__address">
+                                1003 Manhattan Ave, Manhattan Beach, CA 90263, USA
+                            </address>
+                            
+                            <div class="schedule">
+                                <p class="workingDays">Monday - Friday</p>
+                                <p class="workingHours">06:00 AM - 10:00 PM</p>
+                                <p class="workingDays">Saturday - Sunday</p>
+                                <p class="workingHours">08:00 AM - 16:00 PM</p>
+                            </div>
+
+                            <address class="location__contacts">
+                                <a class="location__phone" href="tel:+61(0) 383 766 284">+61(0) 383 766 284</a>
+                                <a class="location__email" href="mailto:noreply@envato.com">noreply@envato.com</a>
+                            </address>
+                        </div>
+                    </li>
+
+                    <li class="grid__contacts">
+                        <div class="location">
+                            <div class="location__type">CAFE</div>
+                            
+                            <h4 class="location__city">New York</h4>
+                            
+                            <address class="location__address">
+                                726 Sterling Pl, Brooklyn, NY 11222, USA
+                            </address>
+                            
+                            <div class="schedule">
+                                <p class="workingDays">Monday - Friday</p>
+                                <p class="workingHours">06:00 AM - 10:00 PM</p>
+                                <p class="workingDays">Saturday - Sunday</p>
+                                <p class="workingHours">08:00 AM - 16:00 PM</p>
+                            </div>
+
+                            <address class="location__contacts">
+                                <a class="location__phone" href="tel:+61(0) 383 766 284">+61(0) 383 766 284</a>
+                                <a class="location__email" href="mailto:noreply@envato.com">noreply@envato.com</a>
+                            </address>
+                        </div>
+                    </li>
+                </ul>
+
+                <button class="ourLocationBtn" type="button" data-locationModal-open>Our Locations
+                    <svg class="arrowBtn">
+                        <use href="/images/sprite.svg#icon-arrowBtn"></use>
+                    </svg>
+
+                </button>
+                
+                <div class="backdrop is-hidden" data-locationModal>
+                    <div class="locationModal">
+                        <button class="crossBtn" data-locationModal-close>
+                            <svg width="20px" height="20px">
+                                <use href="/images/sprite.svg#icon-clarity_close-line"></use>
+                            </svg>
+                        </button>
+                        <h3 class="locationModal__title">Our Locations</h3>
+                        <div class="locationModal__img"></div>
+                        <button class="locationModal__btn" type="button">Open map</button>
+                    </div>
+                </div>
+
+                <button class="franchiseBtn" type="button" data-franchiseModal-open>Franchise
+                    <svg class="arrowBtn">
+                        <use href="/images/sprite.svg#icon-arrowBtn"></use>
+                    </svg>
+                </button>
+
+                <div class="backdrop is-hidden" data-franchiseModal>
+                    <div class="franchiseModal">
+                        <button class="crossBtn" data-franchiseModal-close>
+                            <svg width="20px" height="20px">
+                                <use href="/images/sprite.svg#icon-clarity_close-line"></use>
+                            </svg>
+                        </button>
+                        <article class="franchise">
+                            <h3 class="franchise__title">Thank you for your interest in owning an Ice Cream shop</h3>
+                            <p class="franchise__description">Due to the overwhelming volume of franchise requests we are not accepting new franchisee applications at this time. Once the application process resumes, we will contact you for further information. Please fill out the contact information below and we will reach out for additional information. We appreciate your patience.</p>
+                            <form class="form">
+                                    <input class="form__field" type="text" name="name" placeholder="Name" />
+                                    <input class="form__field" type="tel" name="tel" placeholder="Phone" />
+                                    <input class="form__field" type="email" name="email" placeholder="Email">
+                                    <textarea class="form__comments" name="comments" rows="3" placeholder="Comment"></textarea>
+                                    <button class="form__submit" type="submit">Submit</button>
+                            </form>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer container">
+            <p class="footer__description">homemade ice cream made</p>
+            <p class="footer__title">with passion</p>
+
+            <ul class="footer__socialMedia">
+                    <li>
+                        <a class="footer__socialMediaLink" href="https://github.com/" target="_blank">
+                            <svg width="20px" height="20px">
+                                <use href="/images/sprite.svg#icon-github"></use>
+                            </svg>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="footer__socialMediaLink" href="https://desktop.telegram.org/" target="_blank">
+                            <svg width="20px" height="20px">
+                                <use href="/images/sprite.svg#icon-telegram"></use>
+                            </svg>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="footer__socialMediaLink" href="https://uk-ua.facebook.com/" target="_blank">
+                            <svg width="20px" height="20px">
+                                <use href="/images/sprite.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+            </ul>
+            
+            <p class="footer__tel">Feel free to contact <a class="footer__telLink" href="tel:+61 (0) 383 766 284">+61 (0) 383 766 284</a></p>
+
+            <div class="footer__copyright">
+                <p>© 2022 - IceCream.<br/>All Rights Reserved. </p>
+            </div>
+        </footer>
+
+        <script defer src="./js/mobile-menu.js"></script>
+        <script src="./js/modal.js"></script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+@keyframes slideanim {
+    12.5%{
+        opacity: 1;
+    }
+    25%{
+        opacity: 1;
+    }   
+    37.5%{
+        opacity: 0;
+    }
+}
+
+@keyframes zoom {
+    50%{
+        transform: scale(1.3);
+    }   
+}
