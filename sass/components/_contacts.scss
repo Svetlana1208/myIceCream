@@ -2,102 +2,194 @@
     padding-bottom: 60px;
 
     background-color: var(--primary-color);
+
+    @media (min-width: 768px) {
+        padding-bottom: 40px;
+    }
+
+    @media (min-width: 1200px) {
+        padding-bottom: 120px;
+    }
 }
 
 .grid__contacts {
     width: 280px;
-    height: 412px;
 
     display: flex;
     flex-direction: column;
-    padding: 40px 32px 24px;
-    margin-left: auto;
-    margin-right: auto;
-
+    padding-top: 40px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 24px;
 
     background: var(--white-color);
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
 
         &:first-child {
-            margin-top: -353px;
+            @media (max-width: 767px) {
+                margin-top: -353px;
+            }
         }
 
         &:not(:first-child) {
-            margin-top: 16px;
+            @media (max-width:767px) {
+                margin-top: 16px;
+            }
         }
+        
+    @media (max-width: 767px) {
+        margin-left: auto;
+        margin-right: auto;    
+    }
+
+    @media (min-width: 768px) {
+        width: 224px;
+        height: 537px;
+        padding-left: 24px;
+        padding-bottom: 40px;
+        margin-top: -299px;
+    }
+
+    @media (min-width: 1200px) {
+        width: 368px;
+        height: 542px;
+        margin-top: -128px;
+        padding-left: 40px;
+    }
 }
 
 .location {
+    font-weight: 500;
 
         &__type {
             display: inline-block;
             margin-bottom: 20px;
             padding: 4px 22px;
 
-            font-weight: 500;
-            line-height: 120%;
+            line-height: 14px;
             letter-spacing: 0.04em;
 
             background: var(--yellow-color);
             border-radius: 4px;
+
+            @media (min-width: 768px) {
+                margin-bottom: 32px;
+                padding: 4px 13px;
+                font-size: 16px;
+                line-height: 22px;
+            }
         }
 
         &__city {
             margin-bottom: 8px;
 
             font-weight: 500;
-            line-height: 186%;
+            line-height: 22px;
             letter-spacing: 0.04em;
+
+            @media (min-width: 768px) {
+                margin-bottom: 12px;
+
+                font-size: 14px;
+                line-height: 26px;
+            }
+
+            @media (min-width: 1200px) {
+                margin-bottom: 8px;
+
+                font-size: 16px;
+                line-height: 30px;
+            }
         }
 
         &__address {
             padding-bottom: 24px;
 
             font-style: normal;
-            font-weight: 500;
-            line-height: 183%;
+            line-height: 22px;
 
             letter-spacing: 0.04em;
 
             color: var(--milkshakes-bgColor);
             border-bottom: 1px solid #E1E1E1;
+
+            @media (min-width: 768px) {
+                padding-bottom: 32px;
+
+                font-size: 14px;
+                line-height: 26px;
+            }
+
+            @media (min-width: 1200px) {
+                font-size: 16px;
+                line-height: 29px;
+            }
         }
 
         &__contacts {
             padding-top: 24px;
+
+            @media (min-width: 768px) {
+                padding-top: 32px;
+            }
         }
 
         &__phone,
         &__email {
-            margin-bottom: 8px;
 
             font-style: normal;
-            font-weight: 500;
-            line-height: 160%;
+            line-height: 19px;
             text-decoration: none;
 
             color: var(--secondary-black-color);
+
+            @media (min-width: 768px) {
+                font-size: 14px;
+                line-height: 21px;
+            }
+
+            @media (min-width: 1200px) {
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+
+        &__phone {
+            display: block;
+            margin-bottom: 6px;
+
+            @media (min-width: 768px) {
+                margin-bottom: 4px;
+            }
         }
 }
 
 .schedule {
     padding: 24px 0;
 
+    font-weight: 500;
+    line-height: 22px;
+
     border-bottom: 1px solid #E1E1E1;
+
+    @media (min-width: 768px) {
+        padding: 32px 0;
+        font-size: 14px;
+        line-height: 26px;
+    }
+
+    @media (min-width: 1200px) {
+        font-size: 16px;
+        line-height: 30px;
+    }
 }
 
 .workingDays {
-    font-weight: 500;
-    line-height: 186%;
-
     color: var(--secondary-black-color);
 }
 
 .workingHours {
-    font-weight: 500;
-    line-height: 186%;
-
     color: var(--grey-color);
 
         &:not(:last-child) {
@@ -105,12 +197,32 @@
         }
 }
 
+.locationBtns {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+
+    @media (min-width: 480px) {
+        margin-top: 24px;
+    }
+
+    @media (min-width: 768px) {
+        flex-direction: row;
+        margin-top: 40px;
+        justify-content: center;
+    }
+
+    @media (min-width: 1200px) {
+        margin-top: 60px;
+    }
+}
+
 .ourLocationBtn {
     @extend %button;
             
     width: 196px;
 
-    margin-top: 20px;
+    line-height: 18px;
 
         &:hover {
             background-color: var(--hover-color);
@@ -129,6 +241,11 @@
             background-color: var(--grey-color);
         }
 
+    @media (min-width: 768px) {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
 }
 
 .locationModal {
@@ -150,12 +267,27 @@
 
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+    @media (min-width: 768px) {
+        width: 568px;
+        height: 458px;
+
+        padding: 32px 60px;
+    }
+
         &__title {
             margin-bottom: 20px;
 
             font-family: 'Seymour One';
+            font-weight: 400;
             font-size: 16px;
             line-height: 24px;
+
+            @media (min-width: 768px) {
+                margin-bottom: 32px;
+
+                font-size: 20px;
+                line-height: 28px;    
+            }
         }
 
         &__img {
@@ -164,12 +296,30 @@
 
             margin-bottom: 24px;
 
-            background-image: url(/images/contacts/locations.png);
+            background-image: image-set(url("/images/contacts/locations.png") 1x, url("/images/contacts/locations@2x.png") 2x);
+
+            @media (min-width: 768px) {
+                width: 448px;
+                height: 260px;
+
+                margin-bottom: 32px;
+
+                background-image: image-set(url("/images/contacts/locationsTablet.png") 1x, url("/images/contacts/locationsTablet@2x.png") 2x);
+            }
         }
 
         &__btn {
             @extend %button;
             width: 134px;
+
+            @media (max-width: 767px) {
+                font-size: 12px;
+                line-height: 15px;    
+            }
+
+            @media (min-width: 768px) {
+                width: 145px;
+            }
         }
 }
 
@@ -178,8 +328,7 @@
 
     width: 196px;
 
-    margin-top: 16px;
-
+    line-height: 18px;
     background-color: transparent;
     border: 2px solid var(--yellow-color);
 
@@ -199,6 +348,15 @@
         &:disabled {
             border-color: var(--grey-color);
         }
+
+    @media (max-width: 767px) {
+        margin-top: 16px;
+    }
+
+    @media (min-width: 768px) {
+        margin-left: 16px;
+        margin-right: 0;
+    }
 }
 
 .franchiseModal {
@@ -219,16 +377,33 @@
     opacity: 1;
 
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media (min-width: 768px) {
+        width: 568px;
+        height: 668px;
+
+        padding: 32px 60px;
+    }
 }
 
 .franchise {
-
         &__title {
             margin-bottom: 20px;
 
             font-family: 'Seymour One';
+            font-weight: 400;
             font-size: 16px;
             line-height: 24px;
+
+            @media (min-width: 768px) {
+                width: 322px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 24px;
+
+                font-size: 20px;
+                line-height: 28px;    
+            }
         }
 
         &__description {
@@ -236,6 +411,14 @@
 
             text-align: left;
             font-size: 14px;
-            line-height: 140%;
+            line-height: 20px;
+
+            @media (min-width: 768px) {
+                margin-bottom: 32px;
+
+                font-size: 16px;
+                line-height: 22px;
+    
+            }
         }
 }

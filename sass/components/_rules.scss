@@ -23,6 +23,11 @@ h1 {
     text-transform: uppercase;
 
     color: var( --white-color);
+
+    @media (min-width: 1200px) {
+        font-size: 38px;
+        line-height: 48px;    
+    }
 }
 
 h2 {
@@ -32,6 +37,17 @@ h2 {
     line-height: 38px;
     letter-spacing: 0.04em;
     text-transform: uppercase;
+
+    @media (min-width: 768px) {
+        font-size: 34px;
+        line-height: 43px;
+    }
+
+    @media (min-width: 1200px) {
+        font-size: 36px;
+        line-height: 45px;
+        letter-spacing: 0.06em;
+    }
 }
 
 ul,
@@ -46,32 +62,75 @@ p {
 }
 
 a {
-    text-decoration: none;
     color: var(--secondary-black-color);
 }
 
 img {
     display: block;
-    max-width: 100%;
-    height: auto;
+}
+
+input, textarea {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 17px;
+    color: var(--secondary-black-color);
+
+    @media (min-width: 768px) {
+        font-size: 14px;
+        line-height: 20px;    
+    }
+}
+
+button {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 14px;
 }
 
 .container {
-    padding: 0 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    @media (min-width: 768px) {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+    
+    @media (min-width: 1200px) {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
 }
 
 .logo {
     position: absolute;
     top: 12px;
     left: 20px;
+
+    width: 40px;
+    height: 37px;
+
+    @media (min-width: 480px) {
+        top: 14px;
+        width: 48px;
+        height: 44px;
+    }
+    
+    @media (min-width: 768px) {
+        top: 20px;
+        left: 32px;
+    }
+    
+    @media (min-width: 1200px) {
+        width: 60px;
+        height: 65px;
+    }
 }
 
 .toggle {
-    position: absolute;
-    top: 16px;
-    right: 20px;
-
     display: flex;
+    padding: 0;
     align-items: center;
     justify-content: center;
     width: 32px;
@@ -79,7 +138,7 @@ img {
 
     color: var(--white-color);
     background-color: transparent;
-    border: none;
+    border: none;    
 }
 
 .visuallyHidden {
@@ -97,7 +156,14 @@ img {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    flex-direction: column;
+
+    @media (max-width: 767px) {
+        flex-direction: column;
+    }
+
+    @media (min-width: 768px) {
+        justify-content: space-between;
+    }
 }
 
 .backdrop {
@@ -106,7 +172,7 @@ img {
     top: 0;
 
     width: 100%;
-    height: 100%;
+    height: 100vh;
 
     overflow-y: scroll;
     background-color: var(--white-color);
@@ -122,7 +188,6 @@ img {
             pointer-events: none;
 
             transform: scale(0.5);
-            opacity: 0;
         }
 }
 

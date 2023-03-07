@@ -1,10 +1,24 @@
 .advantages {
     padding-top: 50px;
-    padding-bottom: 68px;
+    padding-bottom: 32px;
 
     text-align: center;
 
     background-color: var(--primary-color);
+
+    @media (min-width: 480px) {
+        padding-top: 60px;
+    }
+
+    @media (min-width: 768px) {
+        padding-top: 80px;
+        padding-bottom: 60px;
+    }
+
+    @media (min-width: 1200px) {
+        padding-top: 146px;
+        padding-bottom: 80px;
+    }
 }
 
 .grid__advItem {
@@ -20,6 +34,46 @@
             margin-bottom: 16px;
         
             background-size: contain;
+
+            @media (min-width: 768px) {
+                margin-bottom: 32px;
+            }
+
+            @media (min-width: 1200px) {
+                margin-bottom: 40px;
+            }
+        }
+    
+        &:first-child::before {
+            background-image: url(/images/advantages/cow.png);
+        }
+
+        &:nth-child(2) {
+            @media (max-width: 479px) {
+                margin-top: 28px;
+            }
+
+            @media (min-width: 480px) and (max-width: 767px) {
+                margin-top: 32px;
+            }        
+
+            &::before {
+            background-image: url(/images/advantages/weight.png);
+            }
+        }
+
+        &:nth-child(3) {
+            @media (max-width: 479px) {
+                margin-top: 22px;
+            }
+
+            @media (min-width: 480px) and (max-width: 767px) {
+                margin-top: 32px;
+            }        
+
+            &::before {
+                background-image: url(/images/advantages/iceCream.png);
+            }
         }
 }
 
@@ -34,31 +88,41 @@
             text-transform: uppercase;
 
             color: var(--white-color);
+
+            @media (min-width: 768px) {
+                margin-bottom: 12px;
+
+                font-size: 48px;
+                line-height: 59px;    
+            }
+
+            @media (min-width: 1200px) {
+                font-size: 58px;
+                line-height: 71px;    
+            }
         }
 
         &__description {
             width: 230px;
 
-            line-height: 170%;
-
+            line-height: 20px;
             text-align: center;
 
             color: var(--white-color);
+
+            @media (min-width: 768px) {
+                width: 152px;
+
+                font-size: 14px;
+                line-height: 24px;
+            }
+
+            @media (min-width: 1200px) {
+                width: 368px;
+
+                font-size: 16px;
+                line-height: 28px;
+                letter-spacing: 0.02em;
+            }
         }
-}
-
-.imgCow::before {
-    background-image: url(/images/advantages/cow.png);
-}
-
-.imgWeight::before {
-    margin-top: 28px;
-
-    background-image: url(/images/advantages/weight.png);
-}
-
-.imgIceCream::before {
-    margin-top: 22px;
-    
-    background-image: url(/images/advantages/iceCream.png);
 }

@@ -1,6 +1,27 @@
 .footer {
     background-color: var(--primary-color);
 
+        &__container {
+            border-bottom: 1px solid #E1E1E1;
+
+            @media (min-width: 768px) {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+
+        &__name {
+            width: 234px;
+
+            @media (min-width: 768px) {
+                width: 352px;
+            }
+
+            @media (min-width: 1200px) {
+                width: 504px;
+            }
+        }
+
         &__description {
             font-weight: 700;
             font-size: 18px;
@@ -8,6 +29,18 @@
             text-transform: uppercase;
 
             color: var(--white-color);
+
+            @media (min-width: 768px) {
+                font-size: 26px;
+                line-height: 32px;
+                letter-spacing: 0.04em;
+            }
+
+            @media (min-width: 1200px) {
+                font-weight: 400;
+                font-size: 30px;
+                line-height: 37px;
+            }
         }
 
         &__title {
@@ -21,6 +54,34 @@
             text-transform: uppercase;
 
             color: var(--white-color);
+
+            @media (min-width: 768px) {
+                margin-top: 8px;
+                margin-bottom: 32px;
+
+                font-size: 48px;
+                line-height: 59px;
+                letter-spacing: 0.06em;
+            }
+
+            @media (min-width: 1200px) {
+                margin-top: 14px;
+                margin-bottom: 60px;
+
+                font-size: 58px;
+                line-height: 71px;
+            }
+        }
+
+        &__socialMediaContainer {            
+            @media (min-width: 768px) {
+                margin-top: 61px;
+                text-align: right;
+            }
+
+            @media (min-width: 1200px) {
+                margin-top: 18px;
+            }
         }
 
         &__socialMedia {
@@ -32,6 +93,16 @@
             margin-left: auto;
             margin-bottom: 20px;
             justify-content: space-between;
+
+            @media (min-width: 768px) {
+                width: 162px;
+
+                margin-bottom: 34px;
+            }
+
+            @media (min-width: 1200px) {
+                margin-bottom: 40px;
+            }
         }
 
         &__socialMediaLink {
@@ -55,29 +126,54 @@
 
             font-weight: 700;
             font-size: 12px;
-            line-height: 186%;
+            line-height: 22px;
 
             text-align: right;
+
+            @media (min-width: 768px) {
+                font-size: 14px;
+                line-height: 26px;
+            }
+
+            @media (min-width: 1200px) {
+                font-size: 16px;
+                line-height: 30px;
+
+                letter-spacing: 0.02em;
+            }
         }
 
         &__telLink {
-
             text-decoration: none;
 
             color: var(--white-color);
         }
 
         &__copyright {
-            padding: 20px;
+            width: 280px;
+            padding: 20px 65px;
+            margin-left: auto;
+            margin-right: auto;
 
             font-weight: 700;
             font-size: 14px;
-            line-height: 152%;
+            line-height: 21px;
 
             text-align: center;
 
             color: #7A7A7A;
-            border-top: 1px solid #E1E1E1;
+
+            @media (min-width: 768px) {
+                width: 300px;
+                padding: 12px 0;
+            }
+
+            @media (min-width: 1200px) {
+                font-size: 12px;
+                line-height: 22px;
+
+                letter-spacing: 0.02em;
+            }
         }
 }
 

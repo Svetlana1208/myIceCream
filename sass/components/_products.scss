@@ -1,14 +1,24 @@
 .productSection {
     margin: 0;
     padding-top: 61px;
+    padding-bottom: 60px;
 
-    background-image: url(/images/products/bgImgProducts.png);
+    background-image: image-set(url("/images/products/bgImgProductsMobile.png") 1x, url("/images/products/bgImgProductsMobile@2x.png") 2x);
 
+    @media (min-width: 480px) {
+        background-image: image-set(url("/images/products/bgImgProducts480.png") 1x, url("/images/products/bgImgProducts480@2x.png") 2x);
+    }
+
+    @media (min-width: 768px) {
+        background-image: image-set(url("/images/products/bgImgProductsTablet.png") 1x, url("/images/products/bgImgProductsTablet@2x.png") 2x);
+    }
+
+    @media (min-width: 1200px) {
+        background-image: image-set(url("/images/products/bgImgProductsDesktop.png") 1x, url("/images/products/bgImgProductsDesktop@2x.png") 2x);
+    }
 
         &__title {
             display: flex;
-            width: 270px;
-            height: 72px;
             margin: auto;
 
             flex-direction: column;
@@ -22,42 +32,88 @@
             font-size: 18px;
             line-height: 22px;
             text-transform: uppercase;
+
+            @media (min-width: 768px) {
+                font-size: 22px;
+                line-height: 27px;
+            }
+
+            @media (min-width: 1200px) {
+                font-size: 30px;
+                line-height: 37px;
+                letter-spacing: 0.04em;
+            }
         }
 }
     
 .grid__item {
+    position: relative;
+
     display: flex;
     width: 280px;
     height: 420px;
-    margin-top: 158px;
-    padding: 123px 40px 16px;
+    margin-top: 168px;
+    padding-top: 123px;
+    padding-left: 40px;
+    padding-right: 40px;
     margin-left: auto;
     margin-right: auto;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
     
     border-radius: 24px;
 
-        &:last-child {
-            margin-bottom: 60px;
-        }
-
         &::before {
             content: "";
-            width: 220px;
-            height: 235px;                
-            margin-top: -235px;
-            margin-right: 15px;
+            width: 200px;
+            height: 220px;                
+            margin-top: -220px;
                 
             background-size: cover;
+
+            @media (min-width: 1200px) {
+                width: 302px;
+                height: 328px;
+                margin-top: -328px;
+            }
         }
+    
+
+    @media (min-width: 480px) and (max-width: 767px) {
+        padding-left: 60px;
+        padding-right: 60px;
+        width: 320px;
+        height: 428px;
+    }
+
+    @media (min-width: 768px) {
+        width: 224px;
+        height: 428px;
+        margin-top: 200px;
+        padding-top: 108px;
+        padding-left: 26px;
+        padding-right: 26px;
+    }
+
+    @media (min-width: 1200px) {
+        width: 370px;
+        height: 536px;
+        margin-top: 303px;
+        padding-top: 165px;
+        padding-left: 64px;
+        padding-right: 64px;
+    }
 }
 
 .iceCream {
     background-color: var(--iceCream-bgColor);
 
     &::before {
-        background-image: url(/images/products/productIceCream.png);
+        background-image: image-set(url("/images/products/productIceCream.png") 1x, url("/images/products/productIceCream@2x.png") 2x);
+
+        @media (min-width: 1200px) {
+            background-image: image-set(url("/images/products/productIceCreamDesktop.png") 1x, url("/images/products/productIceCreamDesktop@2x.png") 2x);
+        }
     }
 }
 
@@ -65,7 +121,11 @@
     background-color: var(--iceCoffee-bgColor);
 
     &::before {
-        background-image: url(/images/products/productIceCoffee.png);
+        background-image: image-set(url("/images/products/productIceCoffee.png") 1x, url("/images/products/productIceCoffee@2x.png") 2x);
+
+        @media (min-width: 1200px) {
+            background-image: image-set(url("/images/products/productIceCoffeeDesktop.png") 1x, url("/images/products/productIceCoffeeDesktop@2x.png") 2x);
+        }
     }
 }
 
@@ -73,9 +133,11 @@
     background-color: var(--milkshakes-bgColor);
 
     &::before {
-        margin-right: 0;
+        background-image: image-set(url("/images/products/productMilkShake.png") 1x, url("/images/products/productMilkShake@2x.png") 2x);
 
-        background-image: url(/images/products/productMilkShake.png);
+        @media (min-width: 1200px) {
+            background-image: image-set(url("/images/products/productMilkShakeDesktop.png") 1x, url("/images/products/productMilkShakeDesktop@2x.png") 2x);
+        }
     }
 }
 
@@ -91,43 +153,46 @@
             letter-spacing: 0.04em;
             text-transform: uppercase;
             text-align: center;
+
+            @media (min-width: 768px) {
+                font-size: 22px;
+                line-height: 27px;    
+            }
+
+            @media (min-width: 1200px) {
+                margin-top: 20px;
+
+                font-size: 30px;
+                line-height: 37px;    
+            }
         }
 
         &__description {
-            display: flex;
-            width: 200px;
             margin-top: 40px;
-            margin-left: auto;
-            margin-right: auto;
-            align-items: center;
             text-align: center;
 
             font-size: 14px;
-            line-height: 176%;
+            line-height: 25px;
             letter-spacing: 0.04em;
+
+            @media (min-width: 1200px) {
+                margin-top: 66px;
+
+                font-size: 16px;
+                line-height: 28px;    
+            }
         }
-}
 
-.arrowIceCream, .arrowIceCoffee, .arrowMilkShakes {
-    width: 40px;
-    height: 16px;
-
-    border: none;
-    background-size: contain;
-    background-color: transparent;
-    background-image: url(/images/products/Arrow.svg);
-}
-
-.arrowIceCream {
-    margin-top: 101px;
-}
-
-.arrowIceCoffee {
-    margin-top: 53px;
-}
-
-.arrowMilkShakes {
-    margin-top: 73px;
+        &__arrow {
+            position: absolute;
+            bottom: 16px;
+                
+            fill: var(--secondary-black-color);
+            border: none;
+            background-size: contain;
+            background-color: transparent;
+        
+        }
 }
 
 .productCard {
@@ -158,9 +223,17 @@
         }
 
         &__img {
+            display: flex;
+            width: 150px;
+            height: 139px;
             margin-left: auto;
             margin-right: auto;
             margin-bottom: 15px;
+            justify-content: center;
+
+            @media (min-width: 768px) {
+                margin-bottom: 25px;
+            }
         }
 
         &__calories {
@@ -168,7 +241,32 @@
             width: 240px;
             justify-content: space-between;
             margin-bottom: 40px;
+
+            @media (min-width: 768px) {
+                width: 320px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 48px;
+            }
         }
+
+        &__item {
+            width: 53px;
+            height: 72px;
+
+            @media (min-width: 768px) {
+                width: 65px;
+                height: 90px;
+            }
+        }
+    
+    @media (min-width: 768px) {
+        width: 568px;
+        height: 996px;
+
+        padding: 32px 40px;
+
+    }
 }
 
 .ingredients {
@@ -181,22 +279,23 @@
         &__list {
             display: flex;
             flex-direction: column;
+            margin-bottom: 40px;
+
+            @media (min-width: 768px) {
+                margin-bottom: 48px;
+            }
         }
 
         &__li:not(:last-child) {
             margin-bottom: 11px;
         }
 
-        &__li:last-child {
-            margin-bottom: 40px;
-        } 
-
         &__item {
             display: flex;
             justify-content: space-between;
 
             font-size: 14px;
-            line-height: 176%;
+            line-height: 25px;
             letter-spacing: 0.04em;
         }
 }
@@ -211,6 +310,12 @@
 
             margin-bottom: 16px;
             padding: 11px;
+
+            @media (min-width: 768px) {
+                width: 368px;
+                margin-left: auto;
+                margin-right: auto;
+            }
         }
 
         &__comments {
@@ -218,10 +323,22 @@
 
             margin-bottom: 24px;
             padding: 11px;
+
+            @media (min-width: 768px) {
+                width: 368px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 32px;
+            }
         }
 
         &__submit {
             @extend %button;
             width: 132px;
+
+            @media (min-width: 768px) {
+                width: 121px;
+            }
         }
 }
+

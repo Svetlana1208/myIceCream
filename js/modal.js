@@ -3,6 +3,9 @@
       openModalBtn: document.querySelector("[data-modal-open]"),
       closeModalBtn: document.querySelector("[data-modal-close]"),
       modal: document.querySelector("[data-modal]"),
+      tabletOpenModalBtn: document.querySelector("[data-tabletModal-open]"),
+      tabletCloseModalBtn: document.querySelector("[data-tabletModal-close]"),
+      tabletModal: document.querySelector("[data-tabletModal]"),
       productOpenModalBtn: document.querySelector("[data-productModal-open]"),
       productCloseModalBtn: document.querySelector("[data-productModal-close]"),
       productModal: document.querySelector("[data-productModal]"),
@@ -19,6 +22,8 @@
   
     refs.openModalBtn.addEventListener("click", toggleModal);
     refs.closeModalBtn.addEventListener("click", toggleModal);
+    refs.tabletOpenModalBtn.addEventListener("click", tabletToggleModal);
+    refs.tabletCloseModalBtn.addEventListener("click", tabletToggleModal);
     refs.productOpenModalBtn.addEventListener("click", productToggleModal);
     refs.productCloseModalBtn.addEventListener("click", productToggleModal);
     refs.readMoreOpenModalBtn.addEventListener("click", readMoreToggleModal);
@@ -30,6 +35,12 @@
   
     function toggleModal() {
       refs.modal.classList.toggle("is-hidden");
+      document.body.classList.add("body-modal-open");
+    }
+
+    function tabletToggleModal() {
+      refs.tabletModal.classList.toggle("is-hidden");
+      document.body.classList.toggle("body-modal-open");
     }
 
     function productToggleModal() {

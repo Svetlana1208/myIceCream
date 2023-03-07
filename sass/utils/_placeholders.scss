@@ -8,9 +8,7 @@
     align-items: center;
     justify-content: center;
 
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 18px;
+    line-height: 17px;
 
     color: var(--black-color);
     background-color: var(--yellow-color);
@@ -19,16 +17,12 @@
 }
 
 %formField {
-    line-height: 17px;
-
     background: rgba(248, 210, 78, 0.1);
     border: 1px solid var(--primary-color);
     border-radius: 10px;
 
         &::placeholder {
             color: var(--secondary-black-color);
-            font-size: 12px;
-            line-height: 140%;
         } 
 }
 
