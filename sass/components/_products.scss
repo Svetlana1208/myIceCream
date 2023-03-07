@@ -3,7 +3,7 @@
     padding-top: 61px;
     padding-bottom: 60px;
 
-    background-image: image-set(url("./images/products/bgImgProductsMobile.png") 1x, url("./images/products/bgImgProductsMobile@2x.png") 2x);
+    background-image: image-set(url(".../images/products/bgImgProductsMobile.png") 1x, url("./images/products/bgImgProductsMobile@2x.png") 2x);
 
     @media (min-width: 480px) {
         background-image: image-set(url("./images/products/bgImgProducts480.png") 1x, url("./images/products/bgImgProducts480@2x.png") 2x);
