@@ -109,10 +109,10 @@
     background-color: var(--iceCream-bgColor);
 
     &::before {
-        background-image: image-set(url("../../../myIceCream/images/products/productIceCream.png") 1x, url("../../myIceCream/images/products/productIceCream@2x.png") 2x);
+        background-image: image-set(url("../../../myIceCream/images/products/productIceCream.png") 1x, url("../../../myIceCream/images/products/productIceCream@2x.png") 2x);
 
         @media (min-width: 1200px) {
-            background-image: image-set(url("../../myIceCream/images/products/productIceCreamDesktop.png") 1x, url("../../myIceCream/images/products/productIceCreamDesktop@2x.png") 2x);
+            background-image: image-set(url("../../../myIceCream/images/products/productIceCreamDesktop.png") 1x, url("../../../myIceCream/images/products/productIceCreamDesktop@2x.png") 2x);
         }
     }
 }
@@ -121,10 +121,10 @@
     background-color: var(--iceCoffee-bgColor);
 
     &::before {
-        background-image: image-set(url("../../myIceCream/images/products/productIceCoffee.png") 1x, url("../../myIceCream/images/products/productIceCoffee@2x.png") 2x);
+        background-image: image-set(url("../../../myIceCream/images/products/productIceCoffee.png") 1x, url("../../../myIceCream/images/products/productIceCoffee@2x.png") 2x);
 
         @media (min-width: 1200px) {
-            background-image: image-set(url("../../myIceCream/images/products/productIceCoffeeDesktop.png") 1x, url("../../myIceCream/images/products/productIceCoffeeDesktop@2x.png") 2x);
+            background-image: image-set(url("../../../myIceCream/images/products/productIceCoffeeDesktop.png") 1x, url("../../../myIceCream/images/products/productIceCoffeeDesktop@2x.png") 2x);
         }
     }
 }
@@ -133,10 +133,10 @@
     background-color: var(--milkshakes-bgColor);
 
     &::before {
-        background-image: image-set(url("../../myIceCream/images/products/productMilkShake.png") 1x, url("../../myIceCream/images/products/productMilkShake@2x.png") 2x);
+        background-image: image-set(url("../../../myIceCream/images/products/productMilkShake.png") 1x, url("../../../myIceCream/images/products/productMilkShake@2x.png") 2x);
 
         @media (min-width: 1200px) {
-            background-image: image-set(url("../../myIceCream/images/products/productMilkShakeDesktop.png") 1x, url("../../myIceCream/images/products/productMilkShakeDesktop@2x.png") 2x);
+            background-image: image-set(url("../../../myIceCream/images/products/productMilkShakeDesktop.png") 1x, url("../../../myIceCream/images/products/productMilkShakeDesktop@2x.png") 2x);
         }
     }
 }

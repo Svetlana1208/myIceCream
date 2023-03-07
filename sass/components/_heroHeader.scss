@@ -169,7 +169,7 @@
             width: 320px;
             height: 50px;
 
-            background-image: url(../../myIceCream/images/header/dots.svg);
+            background-image: url(../../../myIceCream/images/header/dots.svg);
 
             @media (min-width: 480px) {
                 width: 330px;
@@ -179,13 +179,13 @@
             @media (min-width: 768px) {
                 width: 768px;
                 height: 68px;
-                background-image: url(../../myIceCream/images/header/dotsTablet.svg);
+                background-image: url(../../../myIceCream/images/header/dotsTablet.svg);
             }
 
             @media (min-width: 1200px) {
                 width: 1200px;
                 height: 384px;
-                background-image: url(../../myIceCream/images/header/dotsDesktop.svg);
+                background-image: url(../../../myIceCream/images/header/dotsDesktop.svg);
             }
         }
 

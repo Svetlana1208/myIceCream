@@ -296,7 +296,7 @@
 
             margin-bottom: 24px;
 
-            background-image: image-set(url("../../myIceCream/images/contacts/locations.png") 1x, url("../../myIceCream/images/contacts/locations@2x.png") 2x);
+            background-image: image-set(url("../../../myIceCream/images/contacts/locations.png") 1x, url("../../../myIceCream/images/contacts/locations@2x.png") 2x);
 
             @media (min-width: 768px) {
                 width: 448px;
@@ -304,7 +304,7 @@
 
                 margin-bottom: 32px;
 
-                background-image: image-set(url("../../myIceCream/images/contacts/locationsTablet.png") 1x, url("../../myIceCream/images/contacts/locationsTablet@2x.png") 2x);
+                background-image: image-set(url("../../../myIceCream/images/contacts/locationsTablet.png") 1x, url("../../../myIceCream/images/contacts/locationsTablet@2x.png") 2x);
             }
         }
 
