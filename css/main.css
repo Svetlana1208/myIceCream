@@ -286,7 +286,7 @@
   right: 0;
   width: 320px;
   height: 50px;
-  background-image: url(./images/header/dots.svg);
+  background-image: url(../../myIceCream/images/header/dots.svg);
 }
 @media (min-width: 480px) {
   .hero__dots {
@@ -298,14 +298,14 @@
   .hero__dots {
     width: 768px;
     height: 68px;
-    background-image: url(./images/header/dotsTablet.svg);
+    background-image: url(../../myIceCream/images/header/dotsTablet.svg);
   }
 }
 @media (min-width: 1200px) {
   .hero__dots {
     width: 1200px;
     height: 384px;
-    background-image: url(./images/header/dotsDesktop.svg);
+    background-image: url(../../myIceCream/images/header/dotsDesktop.svg);
   }
 }
 @-webkit-keyframes animate125 {
@@ -528,25 +528,25 @@
   margin: 0;
   padding-top: 61px;
   padding-bottom: 60px;
-  background-image: -webkit-image-set(url("../../images/products/bgImgProductsMobile.png") 1x, url("../../images/products/bgImgProductsMobile@2x.png") 2x);
-  background-image: image-set(url("../../images/products/bgImgProductsMobile.png") 1x, url("../../images/products/bgImgProductsMobile@2x.png") 2x);
+  background-image: -webkit-image-set(url("../../myIceCream/images/products/bgImgProductsMobile.png") 1x, url("../../myIceCream/images/products/bgImgProductsMobile@2x.png") 2x);
+  background-image: image-set(url("../../myIceCream/images/products/bgImgProductsMobile.png") 1x, url("../../myIceCream/images/products/bgImgProductsMobile@2x.png") 2x);
 }
 @media (min-width: 480px) {
   .productSection {
-    background-image: -webkit-image-set(url("../../images/products/bgImgProducts480.png") 1x, url("../../images/products/bgImgProducts480@2x.png") 2x);
-    background-image: image-set(url("../../images/products/bgImgProducts480.png") 1x, url("../../images/products/bgImgProducts480@2x.png") 2x);
+    background-image: -webkit-image-set(url("../../myIceCream/images/products/bgImgProducts480.png") 1x, url("../../myIceCream/images/products/bgImgProducts480@2x.png") 2x);
+    background-image: image-set(url("../../myIceCream/images/products/bgImgProducts480.png") 1x, url("../../myIceCream/images/products/bgImgProducts480@2x.png") 2x);
   }
 }
 @media (min-width: 768px) {
   .productSection {
-    background-image: -webkit-image-set(url("../../images/products/bgImgProductsTablet.png") 1x, url("../../images/products/bgImgProductsTablet@2x.png") 2x);
-    background-image: image-set(url("../../images/products/bgImgProductsTablet.png") 1x, url("../../images/products/bgImgProductsTablet@2x.png") 2x);
+    background-image: -webkit-image-set(url("../../myIceCream/images/products/bgImgProductsTablet.png") 1x, url("../../myIceCream/images/products/bgImgProductsTablet@2x.png") 2x);
+    background-image: image-set(url("../../myIceCream/images/products/bgImgProductsTablet.png") 1x, url("../../myIceCream/images/products/bgImgProductsTablet@2x.png") 2x);
   }
 }
 @media (min-width: 1200px) {
   .productSection {
-    background-image: -webkit-image-set(url("../../images/products/bgImgProductsDesktop.png") 1x, url("../../images/products/bgImgProductsDesktop@2x.png") 2x);
-    background-image: image-set(url("../../images/products/bgImgProductsDesktop.png") 1x, url("../../images/products/bgImgProductsDesktop@2x.png") 2x);
+    background-image: -webkit-image-set(url("../../myIceCream/images/products/bgImgProductsDesktop.png") 1x, url("../../myIceCream/images/products/bgImgProductsDesktop@2x.png") 2x);
+    background-image: image-set(url("../../myIceCream/images/products/bgImgProductsDesktop.png") 1x, url("../../myIceCream/images/products/bgImgProductsDesktop@2x.png") 2x);
   }
 }
 .productSection__title {
@@ -652,13 +652,13 @@
   background-color: var(--iceCream-bgColor);
 }
 .iceCream::before {
-  background-image: -webkit-image-set(url("../../../myIceCream/images/products/productIceCream.png") 1x, url("../../images/products/productIceCream@2x.png") 2x);
-  background-image: image-set(url("../../../myIceCream/images/products/productIceCream.png") 1x, url("../../images/products/productIceCream@2x.png") 2x);
+  background-image: -webkit-image-set(url("../../../myIceCream/images/products/productIceCream.png") 1x, url("../../myIceCream/images/products/productIceCream@2x.png") 2x);
+  background-image: image-set(url("../../../myIceCream/images/products/productIceCream.png") 1x, url("../../myIceCream/images/products/productIceCream@2x.png") 2x);
 }
 @media (min-width: 1200px) {
   .iceCream::before {
-    background-image: -webkit-image-set(url("../../images/products/productIceCreamDesktop.png") 1x, url("../../images/products/productIceCreamDesktop@2x.png") 2x);
-    background-image: image-set(url("../../images/products/productIceCreamDesktop.png") 1x, url("../../images/products/productIceCreamDesktop@2x.png") 2x);
+    background-image: -webkit-image-set(url("../../myIceCream/images/products/productIceCreamDesktop.png") 1x, url("../../myIceCream/images/products/productIceCreamDesktop@2x.png") 2x);
+    background-image: image-set(url("../../myIceCream/images/products/productIceCreamDesktop.png") 1x, url("../../myIceCream/images/products/productIceCreamDesktop@2x.png") 2x);
   }
 }
 
@@ -666,13 +666,13 @@
   background-color: var(--iceCoffee-bgColor);
 }
 .iceCoffee::before {
-  background-image: -webkit-image-set(url("../../images/products/productIceCoffee.png") 1x, url("../../images/products/productIceCoffee@2x.png") 2x);
-  background-image: image-set(url("../../images/products/productIceCoffee.png") 1x, url("../../images/products/productIceCoffee@2x.png") 2x);
+  background-image: -webkit-image-set(url("../../myIceCream/images/products/productIceCoffee.png") 1x, url("../../myIceCream/images/products/productIceCoffee@2x.png") 2x);
+  background-image: image-set(url("../../myIceCream/images/products/productIceCoffee.png") 1x, url("../../myIceCream/images/products/productIceCoffee@2x.png") 2x);
 }
 @media (min-width: 1200px) {
   .iceCoffee::before {
-    background-image: -webkit-image-set(url("../../images/products/productIceCoffeeDesktop.png") 1x, url("../../images/products/productIceCoffeeDesktop@2x.png") 2x);
-    background-image: image-set(url("../../images/products/productIceCoffeeDesktop.png") 1x, url("../../images/products/productIceCoffeeDesktop@2x.png") 2x);
+    background-image: -webkit-image-set(url("../../myIceCream/images/products/productIceCoffeeDesktop.png") 1x, url("../../myIceCream/images/products/productIceCoffeeDesktop@2x.png") 2x);
+    background-image: image-set(url("../../myIceCream/images/products/productIceCoffeeDesktop.png") 1x, url("../../myIceCream/images/products/productIceCoffeeDesktop@2x.png") 2x);
   }
 }
 
@@ -680,13 +680,13 @@
   background-color: var(--milkshakes-bgColor);
 }
 .milkshakes::before {
-  background-image: -webkit-image-set(url("../../images/products/productMilkShake.png") 1x, url("../../images/products/productMilkShake@2x.png") 2x);
-  background-image: image-set(url("../../images/products/productMilkShake.png") 1x, url("../../images/products/productMilkShake@2x.png") 2x);
+  background-image: -webkit-image-set(url("../../myIceCream/images/products/productMilkShake.png") 1x, url("../../myIceCream/images/products/productMilkShake@2x.png") 2x);
+  background-image: image-set(url("../../myIceCream/images/products/productMilkShake.png") 1x, url("../../myIceCream/images/products/productMilkShake@2x.png") 2x);
 }
 @media (min-width: 1200px) {
   .milkshakes::before {
-    background-image: -webkit-image-set(url("../../images/products/productMilkShakeDesktop.png") 1x, url("../../images/products/productMilkShakeDesktop@2x.png") 2x);
-    background-image: image-set(url("../../images/products/productMilkShakeDesktop.png") 1x, url("../../images/products/productMilkShakeDesktop@2x.png") 2x);
+    background-image: -webkit-image-set(url("../../myIceCream/images/products/productMilkShakeDesktop.png") 1x, url("../../myIceCream/images/products/productMilkShakeDesktop@2x.png") 2x);
+    background-image: image-set(url("../../myIceCream/images/products/productMilkShakeDesktop.png") 1x, url("../../myIceCream/images/products/productMilkShakeDesktop@2x.png") 2x);
   }
 }
 
@@ -1360,7 +1360,7 @@ button {
   width: 224px;
   height: 199px;
   margin-bottom: 20px;
-  background-image: url(./images/about/clarity_play-solid.png), url(./images/about/Rectangle.png);
+  background-image: url(../../myIceCream/images/about/clarity_play-solid.png), url(../../myIceCream/images/about/Rectangle.png);
   background-position: center, top right;
   background-repeat: no-repeat;
 }
@@ -1369,7 +1369,7 @@ button {
     width: 448px;
     height: 205px;
     margin-bottom: 32px;
-    background-image: url(./images/about/clarity_play-solidTablet.png), url(./images/about/RectangleTablet.png);
+    background-image: url(../../myIceCream/images/about/clarity_play-solidTablet.png), url(../../myIceCream/images/about/RectangleTablet.png);
   }
 }
 .articleAbout__description {
@@ -1440,7 +1440,7 @@ button {
   }
 }
 .grid__advItem:first-child::before {
-  background-image: url(./images/advantages/cow.png);
+  background-image: url(../../myIceCream/images/advantages/cow.png);
 }
 @media (max-width: 479px) {
   .grid__advItem:nth-child(2) {
@@ -1453,7 +1453,7 @@ button {
   }
 }
 .grid__advItem:nth-child(2)::before {
-  background-image: url(./images/advantages/weight.png);
+  background-image: url(../../myIceCream/images/advantages/weight.png);
 }
 @media (max-width: 479px) {
   .grid__advItem:nth-child(3) {
@@ -1466,7 +1466,7 @@ button {
   }
 }
 .grid__advItem:nth-child(3)::before {
-  background-image: url(./images/advantages/iceCream.png);
+  background-image: url(../../myIceCream/images/advantages/iceCream.png);
 }
 
 .advantage__title {
@@ -1518,31 +1518,31 @@ button {
   height: 1089px;
   padding-bottom: 413px;
   text-align: center;
-  background-image: -webkit-image-set(url("./images/reviews/bgReviewMobil.png") 1x, url("./images/reviews/bgReviewMobil@2x.png") 2x);
-  background-image: image-set(url("./images/reviews/bgReviewMobil.png") 1x, url("./images/reviews/bgReviewMobil@2x.png") 2x);
+  background-image: -webkit-image-set(url("../../myIceCream/images/reviews/bgReviewMobil.png") 1x, url("../../myIceCream/images/reviews/bgReviewMobil@2x.png") 2x);
+  background-image: image-set(url("../../myIceCream/images/reviews/bgReviewMobil.png") 1x, url("../../myIceCream/images/reviews/bgReviewMobil@2x.png") 2x);
 }
 @media (min-width: 480px) {
   .galleryReviews {
     height: 1150px;
     padding-bottom: 409px;
-    background-image: -webkit-image-set(url("./images/reviews/bgReview480.png") 1x, url("./images/reviews/bgReview480@2x.png") 2x);
-    background-image: image-set(url("./images/reviews/bgReview480.png") 1x, url("./images/reviews/bgReview480@2x.png") 2x);
+    background-image: -webkit-image-set(url("../../myIceCream/images/reviews/bgReview480.png") 1x, url("../../myIceCream/images/reviews/bgReview480@2x.png") 2x);
+    background-image: image-set(url("../../myIceCream/images/reviews/bgReview480.png") 1x, url("../../myIceCream/images/reviews/bgReview480@2x.png") 2x);
   }
 }
 @media (min-width: 768px) {
   .galleryReviews {
     height: 1171px;
     padding-bottom: 382px;
-    background-image: -webkit-image-set(url("./images/reviews/bgReviewTablet.png") 1x, url("./images/reviews/bgReviewTablet@2x.png") 2x);
-    background-image: image-set(url("./images/reviews/bgReviewTablet.png") 1x, url("./images/reviews/bgReviewTablet@2x.png") 2x);
+    background-image: -webkit-image-set(url("../../myIceCream/images/reviews/bgReviewTablet.png") 1x, url("../../myIceCream/images/reviews/bgReviewTablet@2x.png") 2x);
+    background-image: image-set(url("../../myIceCream/images/reviews/bgReviewTablet.png") 1x, url("../../myIceCream/images/reviews/bgReviewTablet@2x.png") 2x);
   }
 }
 @media (min-width: 1200px) {
   .galleryReviews {
     height: 1151px;
     padding-bottom: 228px;
-    background-image: -webkit-image-set(url("./images/reviews/bgReviewDesktop.png") 1x, url("./images/reviews/bgReviewDesktop@2x.png") 2x);
-    background-image: image-set(url("./images/reviews/bgReviewDesktop.png") 1x, url("./images/reviews/bgReviewDesktop@2x.png") 2x);
+    background-image: -webkit-image-set(url("../../myIceCream/images/reviews/bgReviewDesktop.png") 1x, url("../../myIceCream/images/reviews/bgReviewDesktop@2x.png") 2x);
+    background-image: image-set(url("../../myIceCream/images/reviews/bgReviewDesktop.png") 1x, url("../../myIceCream/images/reviews/bgReviewDesktop@2x.png") 2x);
   }
 }
 
@@ -1586,20 +1586,20 @@ button {
           animation: zoom 5000ms infinite, slideanim 15000ms infinite;
 }
 .gallery__item:nth-child(1) {
-  background-image: -webkit-image-set(url("./images/reviews/IceCream.png") 1x, url("./images/reviews/IceCream@2x.png") 2x);
-  background-image: image-set(url("./images/reviews/IceCream.png") 1x, url("./images/reviews/IceCream@2x.png") 2x);
+  background-image: -webkit-image-set(url("../../myIceCream/images/reviews/IceCream.png") 1x, url("../../myIceCream/images/reviews/IceCream@2x.png") 2x);
+  background-image: image-set(url("../../myIceCream/images/reviews/IceCream.png") 1x, url("../../myIceCream/images/reviews/IceCream@2x.png") 2x);
   -webkit-animation-delay: 0;
           animation-delay: 0;
 }
 .gallery__item:nth-child(2) {
-  background-image: -webkit-image-set(url("./images/reviews/IceCream2.png") 1x, url("./images/reviews/IceCream2@2x.png") 2x);
-  background-image: image-set(url("./images/reviews/IceCream2.png") 1x, url("./images/reviews/IceCream2@2x.png") 2x);
+  background-image: -webkit-image-set(url("../../myIceCream/images/reviews/IceCream2.png") 1x, url("../../myIceCream/images/reviews/IceCream2@2x.png") 2x);
+  background-image: image-set(url("../../myIceCream/images/reviews/IceCream2.png") 1x, url("../../myIceCream/images/reviews/IceCream2@2x.png") 2x);
   -webkit-animation-delay: 5000ms;
           animation-delay: 5000ms;
 }
 .gallery__item:nth-child(3) {
-  background-image: -webkit-image-set(url("./images/reviews/IceCream3.png") 1x, url("./images/reviews/IceCream3@2x.png") 2x);
-  background-image: image-set(url("./images/reviews/IceCream3.png") 1x, url("./images/reviews/IceCream3@2x.png") 2x);
+  background-image: -webkit-image-set(url("../../myIceCream/images/reviews/IceCream3.png") 1x, url("../../myIceCream/images/reviews/IceCream3@2x.png") 2x);
+  background-image: image-set(url("../../myIceCream/images/reviews/IceCream3.png") 1x, url("../../myIceCream/images/reviews/IceCream3@2x.png") 2x);
   -webkit-animation-delay: 10000ms;
           animation-delay: 10000ms;
 }
@@ -2034,16 +2034,16 @@ button {
   width: 224px;
   height: 199px;
   margin-bottom: 24px;
-  background-image: -webkit-image-set(url("./images/contacts/locations.png") 1x, url("./images/contacts/locations@2x.png") 2x);
-  background-image: image-set(url("./images/contacts/locations.png") 1x, url("./images/contacts/locations@2x.png") 2x);
+  background-image: -webkit-image-set(url("../../myIceCream/images/contacts/locations.png") 1x, url("../../myIceCream/images/contacts/locations@2x.png") 2x);
+  background-image: image-set(url("../../myIceCream/images/contacts/locations.png") 1x, url("../../myIceCream/images/contacts/locations@2x.png") 2x);
 }
 @media (min-width: 768px) {
   .locationModal__img {
     width: 448px;
     height: 260px;
     margin-bottom: 32px;
-    background-image: -webkit-image-set(url("./images/contacts/locationsTablet.png") 1x, url("./images/contacts/locationsTablet@2x.png") 2x);
-    background-image: image-set(url("./images/contacts/locationsTablet.png") 1x, url("./images/contacts/locationsTablet@2x.png") 2x);
+    background-image: -webkit-image-set(url("../../myIceCream/images/contacts/locationsTablet.png") 1x, url("../../myIceCream/images/contacts/locationsTablet@2x.png") 2x);
+    background-image: image-set(url("../../myIceCream/images/contacts/locationsTablet.png") 1x, url("../../myIceCream/images/contacts/locationsTablet@2x.png") 2x);
   }
 }
 .locationModal__btn {
