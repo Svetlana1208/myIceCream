@@ -97,9 +97,12 @@
             margin-left: 0;
             margin-right: 0;
 
+            font-weight: 600;
             font-size: 12px;
             line-height: 15px;
 
+            text-decoration: none;
+            color: var(--black-color);
             background-color: transparent;
             border: 2px solid var(--yellow-color);
             border-radius: 8px;
@@ -119,11 +122,6 @@
             }
         }
 
-        &__productLink {
-            text-decoration: none;
-            color: var(--black-color);
-        }
-
         &__howItIsMadeBtn {
             display: flex;
             justify-content: center;
@@ -135,20 +133,21 @@
 
             font-size: 12px;
             line-height: 15px;
+            color: var(--yellow-color);
             background-color: transparent;
             border: none;
 
             z-index: 9;
 
-                &:hover .hero__howLink {
+                &:hover {
                     color: var(--hover-color);
                 }
 
-                &:focus .hero__howLink {
+                &:focus {
                     color: var(--white-color);
                 }
 
-                &:disabled .hero__howLink {
+                &:disabled {
                     color: var(--grey-color);
                 }
 
@@ -159,10 +158,6 @@
                 font-size: 14px;
                 line-height: 17px;    
             }
-        }
-
-        &__howLink {
-            color: var(--yellow-color);
         }
 
         &__dots {

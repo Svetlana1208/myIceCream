@@ -220,8 +220,11 @@
   height: 38px;
   margin-left: 0;
   margin-right: 0;
+  font-weight: 600;
   font-size: 12px;
   line-height: 15px;
+  text-decoration: none;
+  color: var(--black-color);
   background-color: transparent;
   border: 2px solid var(--yellow-color);
   border-radius: 8px;
@@ -237,10 +240,6 @@
     font-size: 14px;
     line-height: 18px;
   }
-}
-.hero__productLink {
-  text-decoration: none;
-  color: var(--black-color);
 }
 .hero__howItIsMadeBtn {
   display: -webkit-box;
@@ -258,17 +257,18 @@
   margin-left: 12px;
   font-size: 12px;
   line-height: 15px;
+  color: var(--yellow-color);
   background-color: transparent;
   border: none;
   z-index: 9;
 }
-.hero__howItIsMadeBtn:hover .hero__howLink {
+.hero__howItIsMadeBtn:hover {
   color: var(--hover-color);
 }
-.hero__howItIsMadeBtn:focus .hero__howLink {
+.hero__howItIsMadeBtn:focus {
   color: var(--white-color);
 }
-.hero__howItIsMadeBtn:disabled .hero__howLink {
+.hero__howItIsMadeBtn:disabled {
   color: var(--grey-color);
 }
 @media (min-width: 1200px) {
@@ -278,9 +278,6 @@
     font-size: 14px;
     line-height: 17px;
   }
-}
-.hero__howLink {
-  color: var(--yellow-color);
 }
 .hero__dots {
   position: absolute;
@@ -1780,9 +1777,37 @@ button {
     margin-top: -353px;
   }
 }
+@media (min-width: 768px) {
+  .grid__contacts:first-child .location__address {
+    width: 173px;
+  }
+}
+@media (min-width: 1200px) {
+  .grid__contacts:first-child .location__address {
+    width: 262px;
+  }
+}
 @media (max-width: 767px) {
   .grid__contacts:not(:first-child) {
     margin-top: 16px;
+  }
+}
+.grid__contacts:nth-child(2) .location__address {
+  width: 212px;
+}
+@media (min-width: 768px) {
+  .grid__contacts:nth-child(2) .location__address {
+    width: 158px;
+  }
+}
+@media (min-width: 1200px) {
+  .grid__contacts:nth-child(2) .location__address {
+    width: 288px;
+  }
+}
+@media (min-width: 1200px) {
+  .grid__contacts:nth-child(3) .location__address {
+    width: 262px;
   }
 }
 @media (max-width: 767px) {
@@ -1850,6 +1875,7 @@ button {
   }
 }
 .location__address {
+  width: 190px;
   padding-bottom: 24px;
   font-style: normal;
   line-height: 22px;
@@ -1859,6 +1885,7 @@ button {
 }
 @media (min-width: 768px) {
   .location__address {
+    width: 158px;
     padding-bottom: 32px;
     font-size: 14px;
     line-height: 26px;
