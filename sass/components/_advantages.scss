@@ -45,7 +45,7 @@
         }
     
         &:first-child::before {
-            background-image: url(/images/advantages/cow.png);
+            background-image: url(./images/advantages/cow.png);
         }
 
         &:nth-child(2) {
@@ -58,7 +58,7 @@
             }        
 
             &::before {
-            background-image: url(/images/advantages/weight.png);
+            background-image: url(./images/advantages/weight.png);
             }
         }
 
@@ -72,7 +72,7 @@
             }        
 
             &::before {
-                background-image: url(/images/advantages/iceCream.png);
+                background-image: url(./images/advantages/iceCream.png);
             }
         }
 }
