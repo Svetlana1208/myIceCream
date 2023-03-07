@@ -185,7 +185,6 @@ button {
         &.is-hidden {
             visibility: hidden;
             opacity: 0;
-            pointer-events: none;
 
             transform: scale(0.5);
         }

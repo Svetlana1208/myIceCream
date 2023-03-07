@@ -528,25 +528,25 @@
   margin: 0;
   padding-top: 61px;
   padding-bottom: 60px;
-  background-image: -webkit-image-set(url("../../myIceCream/images/products/bgImgProductsMobile.png") 1x, url("../../myIceCream/images/products/bgImgProductsMobile@2x.png") 2x);
-  background-image: image-set(url("../../myIceCream/images/products/bgImgProductsMobile.png") 1x, url("../../myIceCream/images/products/bgImgProductsMobile@2x.png") 2x);
+  background-image: -webkit-image-set(url("../../../myIceCream/images/products/bgImgProductsMobile.png") 1x, url("../../../myIceCream/images/products/bgImgProductsMobile@2x.png") 2x);
+  background-image: image-set(url("../../../myIceCream/images/products/bgImgProductsMobile.png") 1x, url("../../../myIceCream/images/products/bgImgProductsMobile@2x.png") 2x);
 }
 @media (min-width: 480px) {
   .productSection {
-    background-image: -webkit-image-set(url("../../myIceCream/images/products/bgImgProducts480.png") 1x, url("../../myIceCream/images/products/bgImgProducts480@2x.png") 2x);
-    background-image: image-set(url("../../myIceCream/images/products/bgImgProducts480.png") 1x, url("../../myIceCream/images/products/bgImgProducts480@2x.png") 2x);
+    background-image: -webkit-image-set(url("../../../myIceCream/images/products/bgImgProducts480.png") 1x, url("../../../myIceCream/images/products/bgImgProducts480@2x.png") 2x);
+    background-image: image-set(url("../../../myIceCream/images/products/bgImgProducts480.png") 1x, url("../../../myIceCream/images/products/bgImgProducts480@2x.png") 2x);
   }
 }
 @media (min-width: 768px) {
   .productSection {
-    background-image: -webkit-image-set(url("../../myIceCream/images/products/bgImgProductsTablet.png") 1x, url("../../myIceCream/images/products/bgImgProductsTablet@2x.png") 2x);
-    background-image: image-set(url("../../myIceCream/images/products/bgImgProductsTablet.png") 1x, url("../../myIceCream/images/products/bgImgProductsTablet@2x.png") 2x);
+    background-image: -webkit-image-set(url("../../../myIceCream/images/products/bgImgProductsTablet.png") 1x, url("../../../myIceCream/images/products/bgImgProductsTablet@2x.png") 2x);
+    background-image: image-set(url("../../../myIceCream/images/products/bgImgProductsTablet.png") 1x, url("../../../myIceCream/images/products/bgImgProductsTablet@2x.png") 2x);
   }
 }
 @media (min-width: 1200px) {
   .productSection {
-    background-image: -webkit-image-set(url("../../myIceCream/images/products/bgImgProductsDesktop.png") 1x, url("../../myIceCream/images/products/bgImgProductsDesktop@2x.png") 2x);
-    background-image: image-set(url("../../myIceCream/images/products/bgImgProductsDesktop.png") 1x, url("../../myIceCream/images/products/bgImgProductsDesktop@2x.png") 2x);
+    background-image: -webkit-image-set(url("../../../myIceCream/images/products/bgImgProductsDesktop.png") 1x, url("../../../myIceCream/images/products/bgImgProductsDesktop@2x.png") 2x);
+    background-image: image-set(url("../../../myIceCream/images/products/bgImgProductsDesktop.png") 1x, url("../../../myIceCream/images/products/bgImgProductsDesktop@2x.png") 2x);
   }
 }
 .productSection__title {
@@ -1111,7 +1111,6 @@ button {
 .backdrop.is-hidden {
   visibility: hidden;
   opacity: 0;
-  pointer-events: none;
   -webkit-transform: scale(0.5);
           transform: scale(0.5);
 }
@@ -1589,8 +1588,8 @@ button {
 .gallery__item:nth-child(1) {
   background-image: -webkit-image-set(url("../../../myIceCream/images/reviews/IceCream.png") 1x, url("../../../myIceCream/images/reviews/IceCream@2x.png") 2x);
   background-image: image-set(url("../../../myIceCream/images/reviews/IceCream.png") 1x, url("../../../myIceCream/images/reviews/IceCream@2x.png") 2x);
-  -webkit-animation-delay: 0;
-          animation-delay: 0;
+  -webkit-animation-delay: 1ms;
+          animation-delay: 1ms;
 }
 .gallery__item:nth-child(2) {
   background-image: -webkit-image-set(url("../../../myIceCream/images/reviews/iceCream2.png") 1x, url("../../../myIceCream/images/reviews/iceCream2@2x.png") 2x);
@@ -1657,8 +1656,8 @@ button {
           animation: slideanim 15000ms infinite;
 }
 .customer:nth-child(1) {
-  -webkit-animation-delay: 0;
-          animation-delay: 0;
+  -webkit-animation-delay: 1ms;
+          animation-delay: 1ms;
 }
 .customer:nth-child(2) {
   -webkit-animation-delay: 5000ms;

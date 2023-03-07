@@ -67,7 +67,7 @@
 
                 &:nth-child(1) {
                     background-image: image-set(url("../../../myIceCream/images/reviews/IceCream.png") 1x, url("../../../myIceCream/images/reviews/IceCream@2x.png") 2x);
-                    animation-delay: 0;
+                    animation-delay: 1ms;
                 }
 
                 &:nth-child(2) {
@@ -126,7 +126,7 @@
     animation: slideanim 15000ms infinite;
 
         &:nth-child(1) {
-            animation-delay: 0;
+            animation-delay: 1ms;
         }
 
         &:nth-child(2) {
