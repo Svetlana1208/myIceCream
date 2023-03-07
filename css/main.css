@@ -652,8 +652,8 @@
   background-color: var(--iceCream-bgColor);
 }
 .iceCream::before {
-  background-image: -webkit-image-set(url("../../images/products/productIceCream.png") 1x, url("../../images/products/productIceCream@2x.png") 2x);
-  background-image: image-set(url("../../images/products/productIceCream.png") 1x, url("../../images/products/productIceCream@2x.png") 2x);
+  background-image: -webkit-image-set(url("../../../myIceCream/images/products/productIceCream.png") 1x, url("../../images/products/productIceCream@2x.png") 2x);
+  background-image: image-set(url("../../../myIceCream/images/products/productIceCream.png") 1x, url("../../images/products/productIceCream@2x.png") 2x);
 }
 @media (min-width: 1200px) {
   .iceCream::before {

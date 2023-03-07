@@ -109,7 +109,7 @@
     background-color: var(--iceCream-bgColor);
 
     &::before {
-        background-image: image-set(url("../../images/products/productIceCream.png") 1x, url("../../images/products/productIceCream@2x.png") 2x);
+        background-image: image-set(url("../../../myIceCream/images/products/productIceCream.png") 1x, url("../../images/products/productIceCream@2x.png") 2x);
 
         @media (min-width: 1200px) {
             background-image: image-set(url("../../images/products/productIceCreamDesktop.png") 1x, url("../../images/products/productIceCreamDesktop@2x.png") 2x);
