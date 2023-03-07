@@ -1596,14 +1596,14 @@ button {
           animation-delay: 0;
 }
 .gallery__item:nth-child(2) {
-  background-image: -webkit-image-set(url("../../../myIceCream/images/reviews/IceCream2.png") 1x, url("../../../myIceCream/images/reviews/IceCream2@2x.png") 2x);
-  background-image: image-set(url("../../../myIceCream/images/reviews/IceCream2.png") 1x, url("../../../myIceCream/images/reviews/IceCream2@2x.png") 2x);
+  background-image: -webkit-image-set(url("../../../myIceCream/images/reviews/iceCream2.png") 1x, url("../../../myIceCream/images/reviews/iceCream2@2x.png") 2x);
+  background-image: image-set(url("../../../myIceCream/images/reviews/iceCream2.png") 1x, url("../../../myIceCream/images/reviews/iceCream2@2x.png") 2x);
   -webkit-animation-delay: 5000ms;
           animation-delay: 5000ms;
 }
 .gallery__item:nth-child(3) {
-  background-image: -webkit-image-set(url("../../../myIceCream/images/reviews/IceCream3.png") 1x, url("../../../myIceCream/images/reviews/IceCream3@2x.png") 2x);
-  background-image: image-set(url("../../../myIceCream/images/reviews/IceCream3.png") 1x, url("../../../myIceCream/images/reviews/IceCream3@2x.png") 2x);
+  background-image: -webkit-image-set(url("../../../myIceCream/images/reviews/iceCream3.png") 1x, url("../../../myIceCream/images/reviews/iceCream3@2x.png") 2x);
+  background-image: image-set(url("../../../myIceCream/images/reviews/iceCream3.png") 1x, url("../../../myIceCream/images/reviews/iceCream3@2x.png") 2x);
   -webkit-animation-delay: 10000ms;
           animation-delay: 10000ms;
 }

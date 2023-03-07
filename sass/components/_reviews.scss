@@ -71,12 +71,12 @@
                 }
 
                 &:nth-child(2) {
-                    background-image: image-set(url("../../../myIceCream/images/reviews/IceCream2.png") 1x, url("../../../myIceCream/images/reviews/IceCream2@2x.png") 2x);
+                    background-image: image-set(url("../../../myIceCream/images/reviews/iceCream2.png") 1x, url("../../../myIceCream/images/reviews/iceCream2@2x.png") 2x);
                     animation-delay: 5000ms;
                 }
 
                 &:nth-child(3) {
-                    background-image: image-set(url("../../../myIceCream/images/reviews/IceCream3.png") 1x, url("../../../myIceCream/images/reviews/IceCream3@2x.png") 2x);
+                    background-image: image-set(url("../../../myIceCream/images/reviews/iceCream3.png") 1x, url("../../../myIceCream/images/reviews/iceCream3@2x.png") 2x);
                     animation-delay: 10000ms;
                 }
         }
