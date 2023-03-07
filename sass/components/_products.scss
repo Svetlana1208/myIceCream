@@ -3,18 +3,18 @@
     padding-top: 61px;
     padding-bottom: 60px;
 
-    background-image: image-set(url(".../images/products/bgImgProductsMobile.png") 1x, url("./images/products/bgImgProductsMobile@2x.png") 2x);
+    background-image: image-set(url(".../images/products/bgImgProductsMobile.png") 1x, url(".../images/products/bgImgProductsMobile@2x.png") 2x);
 
     @media (min-width: 480px) {
-        background-image: image-set(url("./images/products/bgImgProducts480.png") 1x, url("./images/products/bgImgProducts480@2x.png") 2x);
+        background-image: image-set(url(".../images/products/bgImgProducts480.png") 1x, url(".../images/products/bgImgProducts480@2x.png") 2x);
     }
 
     @media (min-width: 768px) {
-        background-image: image-set(url("./images/products/bgImgProductsTablet.png") 1x, url("./images/products/bgImgProductsTablet@2x.png") 2x);
+        background-image: image-set(url(".../images/products/bgImgProductsTablet.png") 1x, url(".../images/products/bgImgProductsTablet@2x.png") 2x);
     }
 
     @media (min-width: 1200px) {
-        background-image: image-set(url("./images/products/bgImgProductsDesktop.png") 1x, url("./images/products/bgImgProductsDesktop@2x.png") 2x);
+        background-image: image-set(url(".../images/products/bgImgProductsDesktop.png") 1x, url(".../images/products/bgImgProductsDesktop@2x.png") 2x);
     }
 
         &__title {
@@ -109,10 +109,10 @@
     background-color: var(--iceCream-bgColor);
 
     &::before {
-        background-image: image-set(url("./images/products/productIceCream.png") 1x, url("./images/products/productIceCream@2x.png") 2x);
+        background-image: image-set(url(".../images/products/productIceCream.png") 1x, url(".../images/products/productIceCream@2x.png") 2x);
 
         @media (min-width: 1200px) {
-            background-image: image-set(url("./images/products/productIceCreamDesktop.png") 1x, url("./images/products/productIceCreamDesktop@2x.png") 2x);
+            background-image: image-set(url(".../images/products/productIceCreamDesktop.png") 1x, url(".../images/products/productIceCreamDesktop@2x.png") 2x);
         }
     }
 }
@@ -121,10 +121,10 @@
     background-color: var(--iceCoffee-bgColor);
 
     &::before {
-        background-image: image-set(url("./images/products/productIceCoffee.png") 1x, url("./images/products/productIceCoffee@2x.png") 2x);
+        background-image: image-set(url(".../images/products/productIceCoffee.png") 1x, url(".../images/products/productIceCoffee@2x.png") 2x);
 
         @media (min-width: 1200px) {
-            background-image: image-set(url("./images/products/productIceCoffeeDesktop.png") 1x, url("./images/products/productIceCoffeeDesktop@2x.png") 2x);
+            background-image: image-set(url(".../images/products/productIceCoffeeDesktop.png") 1x, url(".../images/products/productIceCoffeeDesktop@2x.png") 2x);
         }
     }
 }
@@ -133,10 +133,10 @@
     background-color: var(--milkshakes-bgColor);
 
     &::before {
-        background-image: image-set(url("./images/products/productMilkShake.png") 1x, url("./images/products/productMilkShake@2x.png") 2x);
+        background-image: image-set(url(".../images/products/productMilkShake.png") 1x, url(".../images/products/productMilkShake@2x.png") 2x);
 
         @media (min-width: 1200px) {
-            background-image: image-set(url("./images/products/productMilkShakeDesktop.png") 1x, url("./images/products/productMilkShakeDesktop@2x.png") 2x);
+            background-image: image-set(url(".../images/products/productMilkShakeDesktop.png") 1x, url(".../images/products/productMilkShakeDesktop@2x.png") 2x);
         }
     }
 }
