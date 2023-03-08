@@ -141,6 +141,10 @@ button {
     border: none;    
 }
 
+.is-hidden {
+    display: none;
+}
+
 .visuallyHidden {
     position: absolute;
     width: 1px;
