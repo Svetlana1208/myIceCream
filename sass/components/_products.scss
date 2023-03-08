@@ -107,10 +107,11 @@
 
 .iceCream {
     background-color: var(--iceCream-bgColor);
-    z-index: 1;
+    
 
     &::before {
         background-image: image-set(url("../../../myIceCream/images/products/productIceCream.png") 1x, url("../../../myIceCream/images/products/productIceCream@2x.png") 2x);
+        z-index: 1;
 
         @media (min-width: 1200px) {
             background-image: image-set(url("../../../myIceCream/images/products/productIceCreamDesktop.png") 1x, url("../../../myIceCream/images/products/productIceCreamDesktop@2x.png") 2x);
