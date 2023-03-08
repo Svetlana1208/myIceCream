@@ -37,7 +37,7 @@
     function toggleModal() {
       refs.modal.classList.toggle("is-hidden");
       document.body.classList.add("body-modal-open");
-      test.classList.toggle("is-hidden");
+      refs.test.classList.toggle("is-hidden");
     }
 
     function tabletToggleModal() {
