@@ -654,7 +654,6 @@
 .iceCream::before {
   background-image: -webkit-image-set(url("../../../myIceCream/images/products/productIceCream.png") 1x, url("../../../myIceCream/images/products/productIceCream@2x.png") 2x);
   background-image: image-set(url("../../../myIceCream/images/products/productIceCream.png") 1x, url("../../../myIceCream/images/products/productIceCream@2x.png") 2x);
-  z-index: 1;
 }
 @media (min-width: 1200px) {
   .iceCream::before {
@@ -2489,7 +2488,6 @@ button {
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
   opacity: 1;
-  z-index: 999;
   -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), scale 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), scale 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
