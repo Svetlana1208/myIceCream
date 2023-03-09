@@ -117,6 +117,11 @@
   position: relative;
   height: 502px;
 }
+@media (min-width: 480px) {
+  .hero__nav {
+    height: 415px;
+  }
+}
 @media (min-width: 1200px) {
   .hero__nav {
     height: 664px;
@@ -741,7 +746,7 @@
 
 .productCard {
   position: absolute;
-  top: 70%;
+  top: 25px;
   left: 50%;
   width: 280px;
   height: 968px;
@@ -750,8 +755,8 @@
   background-color: var(--white-color);
   border: 2px solid var(--yellow-color);
   border-radius: 10px;
-  -webkit-transform: translate(-50%, -50%) scale(1);
-          transform: translate(-50%, -50%) scale(1);
+  -webkit-transform: translate(-50%, 0) scale(1);
+          transform: translate(-50%, 0) scale(1);
   opacity: 1;
   -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), scale 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), scale 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -760,15 +765,9 @@
 }
 @media (min-width: 768px) {
   .productCard {
-    top: 70%;
     width: 568px;
     height: 996px;
     padding: 32px 40px;
-  }
-}
-@media (min-width: 1200px) {
-  .productCard {
-    top: 75%;
   }
 }
 .productCard__title {
@@ -1101,7 +1100,6 @@ button {
   opacity: 1;
   -webkit-transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  z-index: 999;
 }
 .backdrop.is-hidden {
   visibility: hidden;
@@ -2119,7 +2117,7 @@ button {
 
 .franchiseModal {
   position: absolute;
-  top: 50%;
+  top: 25px;
   left: 50%;
   width: 280px;
   height: 674px;
@@ -2128,8 +2126,8 @@ button {
   background-color: var(--white-color);
   border: 2px solid var(--yellow-color);
   border-radius: 10px;
-  -webkit-transform: translate(-50%, -50%) scale(1);
-          transform: translate(-50%, -50%) scale(1);
+  -webkit-transform: translate(-50%, 0) scale(1);
+          transform: translate(-50%, 0) scale(1);
   opacity: 1;
   -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), scale 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), scale 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -2472,7 +2470,7 @@ button {
 
 .order {
   position: absolute;
-  top: 70%;
+  top: 25px;
   left: 50%;
   width: 280px;
   height: 991px;
@@ -2481,8 +2479,8 @@ button {
   background-color: var(--white-color);
   border: 2px solid var(--yellow-color);
   border-radius: 10px;
-  -webkit-transform: translate(-50%, -50%) scale(1);
-          transform: translate(-50%, -50%) scale(1);
+  -webkit-transform: translate(-50%, 0) scale(1);
+          transform: translate(-50%, 0) scale(1);
   opacity: 1;
   -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), scale 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), scale 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -2491,15 +2489,9 @@ button {
 }
 @media (min-width: 768px) {
   .order {
-    top: 75%;
     width: 568px;
     height: 644px;
     padding: 32px 54px;
-  }
-}
-@media (min-width: 1200px) {
-  .order {
-    top: 50%;
   }
 }
 
