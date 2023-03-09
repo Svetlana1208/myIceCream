@@ -96,11 +96,6 @@ button {
         padding-left: 32px;
         padding-right: 32px;
     }
-    
-    @media (min-width: 1200px) {
-        padding-left: 16px;
-        padding-right: 16px;
-    }
 }
 
 .logo {
@@ -166,7 +161,7 @@ button {
     }
 
     @media (min-width: 768px) {
-        justify-content: space-between;
+        justify-content: space-around;
     }
 }
 
@@ -176,7 +171,7 @@ button {
     top: 0;
 
     width: 100%;
-    height: 800px;
+    height: 100vh;
 
     overflow-y: scroll;
     background-color: var(--white-color);
