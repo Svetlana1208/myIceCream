@@ -741,7 +741,7 @@
 
 .productCard {
   position: absolute;
-  top: 80%;
+  top: 70%;
   left: 50%;
   width: 280px;
   height: 968px;
@@ -760,6 +760,7 @@
 }
 @media (min-width: 768px) {
   .productCard {
+    top: 70%;
     width: 568px;
     height: 996px;
     padding: 32px 40px;
@@ -2471,7 +2472,7 @@ button {
 
 .order {
   position: absolute;
-  top: 80%;
+  top: 70%;
   left: 50%;
   width: 280px;
   height: 991px;
@@ -2490,7 +2491,7 @@ button {
 }
 @media (min-width: 768px) {
   .order {
-    top: 55%;
+    top: 75%;
     width: 568px;
     height: 644px;
     padding: 32px 54px;
