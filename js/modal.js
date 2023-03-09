@@ -3,7 +3,6 @@
       openModalBtn: document.querySelector("[data-modal-open]"),
       closeModalBtn: document.querySelector("[data-modal-close]"),
       modal: document.querySelector("[data-modal]"),
-      test: document.querySelector(".iceCream"),
       tabletOpenModalBtn: document.querySelector("[data-tabletModal-open]"),
       tabletCloseModalBtn: document.querySelector("[data-tabletModal-close]"),
       tabletModal: document.querySelector("[data-tabletModal]"),
@@ -36,8 +35,7 @@
   
     function toggleModal() {
       refs.modal.classList.toggle("is-hidden");
-      document.body.classList.add("body-modal-open");
-      refs.test.classList.toggle("is-hidden");
+      // document.body.classList.add("body-modal-open");
     }
 
     function tabletToggleModal() {
