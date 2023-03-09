@@ -767,7 +767,7 @@
 }
 @media (min-width: 1200px) {
   .productCard {
-    top: 77%;
+    top: 75%;
   }
 }
 .productCard__title {
@@ -2498,7 +2498,7 @@ button {
 }
 @media (min-width: 1200px) {
   .order {
-    top: 52%;
+    top: 50%;
   }
 }
 
