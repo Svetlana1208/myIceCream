@@ -765,6 +765,11 @@
     padding: 32px 40px;
   }
 }
+@media (min-width: 1200px) {
+  .productCard {
+    top: 77%;
+  }
+}
 .productCard__title {
   margin-bottom: 15px;
   font-family: "Seymour One";
@@ -2493,7 +2498,7 @@ button {
 }
 @media (min-width: 1200px) {
   .order {
-    top: 55%;
+    top: 52%;
   }
 }
 
