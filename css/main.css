@@ -119,11 +119,6 @@
   -webkit-perspective: 400px;
           perspective: 400px;
 }
-@media (min-width: 480px) {
-  .hero__nav {
-    height: 415px;
-  }
-}
 @media (min-width: 1200px) {
   .hero__nav {
     height: 664px;
